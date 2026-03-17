@@ -1,0 +1,23 @@
+packages:
+  "framer-motion": "For premium scroll animations and page transitions"
+  "react-hook-form": "For robust contact form state management"
+  "@hookform/resolvers": "For Zod schema validation integration"
+  "zod": "For schema validation"
+  "clsx": "For conditional class name merging"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images:
+  - path: "artifacts/neeron-website/public/images/hero-bg.png"
+    description: "A highly aesthetic, premium macro shot of a fresh water splash with vibrant orange citrus slices and bright green mint leaves flying through the air. Bright, sparkling lighting, clean white background, high-end commercial photography style."
+    aspect_ratio: "16:9"
+  - path: "artifacts/neeron-website/public/images/about-img.png"
+    description: "A bright, sunlit modern bathroom showing pristine, sparkling clean white tiles, a small fresh green potted plant, and vibrant orange towels. Premium, clean, minimalist aesthetic with soft natural shadows."
+    aspect_ratio: "4:3"
+  - path: "artifacts/neeron-website/public/images/pattern-bg.png"
+    description: "Abstract, minimalist geometric background pattern featuring soft, translucent gradients of fresh vibrant green and bright energetic orange on a clean white background. Subtle glassmorphism effects."
+    aspect_ratio: "16:9"
+
+notes:
+  - Using generated API hooks from @workspace/api-client-react
+  - Assuming the API runs on the same domain or through the provided proxy
+  - Expecting ContactRequest and Product schemas from the generated client
