@@ -1,0 +1,82 @@
+Update the existing NEERON website with the following enhancements:
+
+### 1. Add Buy Now Redirection
+
+For each product card, implement a **"Buy Now" button** that redirects users to the correct Meesho product page in a new tab.
+
+Use these exact mappings:
+
+* Floor Cleaner (1L) → https://www.meesho.com/neeron-floor-cleaner-1-liter-powerful-liquid-floor-cleaning-solution-for-tiles-bathroom-kitchen-home-daily-safai-ke-liye-perfect-hai-kum-quantity-me-zyada-cleaning-deta-hai-fresh-fragrance-ke-saath-economical-value-pack/p/d46csc
+
+* Glass Cleaner (1L) → https://www.meesho.com/neeron-glass-cleaner-liquid-1-litre-pack-streak-free-shine-for-glass-mirrors-windows-car-windshields-professional-cleaning-formula-multipurpose-home-commercial-cleaner/p/d4nq2n
+
+* Hand Wash (1L Lemon Zest) → https://www.meesho.com/neeron-liquid-hand-wash-1l-pack-lemon-zest-fragrance-gentle-cleansing-for-daily-use-soft-on-hands-suitable-for-home-commercial-use-already-fitted-with-dispenser-no-need-to-refill/p/d76v3c
+
+* Dish Wash Liquid (1L) → https://www.meesho.com/neeron-dish-wash-liquid-gel-1l-powerful-grease-cleaning-formula-lemon-fresh-dishwashing-liquid-gentle-on-hands-for-utensils-crockery-kitchenware-highly-concentrated-economical/p/d5hwap
+
+* All-in-One Combo (4 x 500ml) → https://www.meesho.com/neeron-all-in-one-home-cleaning-combo-pack-2l-4-x-500ml-floor-cleaner-dish-wash-liquid-spot-surface-cleaner-liquid-hand-wash-kitchen-floor-surface-daily-hygiene-cleaning-combo/p/ceh3k8
+
+* Floor Cleaner + Toilet Cleaner Combo → https://www.meesho.com/neeron-floor-cleaner-toilet-cleaner-combo-pack-2l-combo-multi-surface-floor-cleaning-solution-toilet-cleaning-liquid-for-stain-scale-removal-household-cleaning-supplies/p/cwmgku
+
+Ensure:
+
+* Buttons use `target="_blank"` so links open in a new tab
+* Add hover animation (slight scale + color change)
+
+---
+
+### 2. Add Product Images
+
+For each product:
+
+* Use the **actual product images from the Meesho pages**
+* If direct extraction is not possible, use visually accurate substitutes based on:
+
+  * Floor cleaner bottle
+  * Glass spray cleaner
+  * Handwash dispenser
+  * Dishwash liquid bottle
+  * Combo packs
+
+Ensure:
+
+* Images are properly cropped
+* Same aspect ratio across all cards
+* Lazy loading enabled
+
+---
+
+### 3. Improve Product Cards
+
+Each card should include:
+
+* Image (top)
+* Product Name
+* 1–2 line description
+* "Buy Now" button
+
+Add:
+
+* Rounded corners
+* Soft shadow
+* Hover lift effect
+
+---
+
+### 4. Optional Enhancement (Important)
+
+Search Meesho for **"Neeron cleaning products"** and:
+
+* Add any missing products dynamically
+* Attach correct image + product link
+
+---
+
+### 5. Code Constraint
+
+Do NOT rebuild the website.
+Only modify existing components / product arrays / UI cards.
+
+Keep current design intact and enhance it.
+
+Return only updated code sections.

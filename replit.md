@@ -91,6 +91,19 @@ Generated Zod schemas from the OpenAPI spec (e.g. `HealthCheckResponse`). Used b
 
 Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHealthCheck`, `healthCheck`).
 
+### `artifacts/neeron-website` (`@workspace/neeron-website`)
+
+React + Vite frontend for Neeron Cleaning Solutions. Served at `/` (root path).
+
+- Pages: Home, Products, ProductDetail, About, Contact
+- Components: Navbar, Footer, ProductCard
+- `src/lib/productData.ts` — client-side mapping of product names to Meesho buy links and image paths
+- `public/images/products/` — product bottle images (12 total including 2 combo packs)
+- Products with Meesho links show an orange "Buy Now" button (opens `target="_blank"`)
+- `src/hooks/use-neeron.ts` — React Query hooks wrapping the generated API client
+
 ### `scripts` (`@workspace/scripts`)
 
 Utility scripts package. Each script is a `.ts` file in `src/` with a corresponding npm script in `package.json`. Run scripts via `pnpm --filter @workspace/scripts run <script>`. Scripts can import any workspace package (e.g., `@workspace/db`) by adding it as a dependency in `scripts/package.json`.
+
+- `seed-products` — seeds 12 Neeron products (including 2 combo packs) into the database
